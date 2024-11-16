@@ -149,11 +149,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
-<<<<<<< HEAD
         </dependency>
-=======
-        </dependency> 
->>>>>>> recover-edf344a
     </dependencies>
 
     <!--
@@ -241,8 +237,7 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>
-<<<<<<< HEAD
-=======
+ 
             
             <!--             Test with JaCoco             
             <plugin>
@@ -278,7 +273,6 @@
                     </reports>
                 </configuration>
             </plugin>-->
->>>>>>> recover-edf344a
         </plugins>
     </build>
 
