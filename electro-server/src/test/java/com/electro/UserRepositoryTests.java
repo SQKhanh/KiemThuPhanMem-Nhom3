@@ -23,9 +23,15 @@ public class UserRepositoryTests {
 
     @Test
     public void testGetUserByUsername() {
+<<<<<<< HEAD
 //        User user = userRepository.findByUsername("dnucator0").orElseThrow(null);
 //        Set<Role> roles = user.getRoles();
 //        UserDetailsImpl test = UserDetailsImpl.build(user);
+=======
+        User user = userRepository.findByUsername("dnucator0").orElseThrow(null);
+        Set<Role> roles = user.getRoles();
+        UserDetailsImpl test = UserDetailsImpl.build(user);
+>>>>>>> recover-edf344a
     }
 
 }

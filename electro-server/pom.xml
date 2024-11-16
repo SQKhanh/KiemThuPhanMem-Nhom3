@@ -149,7 +149,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
+<<<<<<< HEAD
         </dependency>
+=======
+        </dependency> 
+>>>>>>> recover-edf344a
     </dependencies>
 
     <!--
@@ -237,6 +241,44 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
+=======
+            
+            <!--             Test with JaCoco             
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.12</version>
+                 
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>com/electro/dto/**</exclude>
+                        <exclude>com/electro/entity/**</exclude>
+                        <exclude>com/electro/mapper/**</exclude>
+                        <exclude>com/electro/config/**</exclude>
+                    </excludes>
+                    <reports>
+                        <html.enabled>true</html.enabled>
+                        <xml.enabled>true</xml.enabled>
+                        <csv.enabled>false</csv.enabled>
+                    </reports>
+                </configuration>
+            </plugin>-->
+>>>>>>> recover-edf344a
         </plugins>
     </build>
 
