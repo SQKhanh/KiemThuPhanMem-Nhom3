@@ -30,10 +30,6 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-/**
- *
- * @author KhanhDzai - https://www.facebook.com/khanhdepzai.pro/
- */
 @ExtendWith(SpringExtension.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
@@ -50,7 +46,7 @@ public class EmployeesRepositoryTests {
 
     @Autowired
     private JobTypeRepository jobTypeRepository;
-
+    
     @Autowired
     private JobLevelRepository jobLevelRepository;
 
@@ -77,7 +73,6 @@ public class EmployeesRepositoryTests {
         var jobTypes = jobTypeRepository.findAll();
         var jobLevels = jobLevelRepository.findAll();
         var jobTitles = jobTitleRepository.findAll();
-        var addressRepositories = this.addressRepository.findAll();
         var provincies = this.provinceRepository.findAll();
         var districts = this.districtRepository.findAll();
 

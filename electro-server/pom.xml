@@ -239,7 +239,7 @@
             </plugin>
  
             
-            <!--             Test with JaCoco             
+            <!--Test with JaCoco-->             
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -272,7 +272,7 @@
                         <csv.enabled>false</csv.enabled>
                     </reports>
                 </configuration>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
